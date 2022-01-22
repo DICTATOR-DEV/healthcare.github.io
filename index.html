@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive hospital website design </title>
+    <title> website design </title>
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -17,15 +17,17 @@
     
 <header class="header">
 
-    <a href="#" class="logo"> <i class="fas fa-ambulance"></i> Healthcare. </a>
+    <a href="#" class="logo"> <i class="fas fa-ambulance"></i><b> Healthcare. </b></a>
 
     <nav class="navbar">
-        <a href="#home">home</a>
+        <p><b><a href="#home">home</a>
         <a href="#services">services</a>
         <a href="#about">about</a>
         <a href="#login">login</a>
         <a href="#review">review</a>
         <a href="#departments">departments </a>
+        <a href="#chatbot">chatbot </a>
+    </b></p>
     </nav>
 
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -38,7 +40,7 @@
         <img src="home-img.svg" alt="">
     </div>
 
-    <div class="content">
+    <div class="rob">
         <h3>Excellent health care... Close to home</h3>
         <p><b>We take pride in leaving no patient behind. That means we offer a range of 
             healthcare and rehabilitation for virtually anyone and any situation.
@@ -135,7 +137,7 @@
             <img src="about-img.svg" alt="">
         </div>
 
-        <div class="content">
+        <div class="rob">
             <h3>we take care of your healthy life</h3>
             <p>We believe that everyone in our community deserves the finest healthcare. And in order to make true on this belief, 
                 we're committed to being the best at everything we do. We believe that if we can be better, we must be better.
@@ -323,56 +325,72 @@
             <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
          </div>
 
+     <section class="chatbot" id="chatbot">
+             <div>
+         <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <link rel="stylesheet" href="chat.css">
+            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+         </head>
+         <body>
+             <div class="chat-bar-collapsible">
+                <button id="chat-button" type="button" class="collapsible">Talk to me
+                    <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+                </button>
+        
+                <div class="content rob">
+                    <div class="full-chat-block">
+                        <!-- Message Container -->
+                        <div class="outer-container">
+                            <div class="chat-container">
+                                <!-- Messages -->
+                                <div id="chatbox">
+                                    <h5 id="chat-timestamp"></h5>
+                                    <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                                </div>
+        
+                                <!-- User input box -->
+                                <div class="chat-bar-input-block">
+                                    <div id="userInput">
+                                        <input id="textInput" class="input-box" type="text" name="msg"
+                                            placeholder="Tap 'Enter' to send a message">
+                                        <p></p>
+                                    </div>
+        
+                                    <div class="chat-bar-icons">
+                                        <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                            onclick="sendButton()"></i>
+                                    </div>
+                                </div>
+        
+                                <div id="chat-bar-bottom">
+                                    <p></p>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+             </div>
+</section>
+        
+            </div>
+        
+        </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="responses.js"></script>
+        <script src="chat.js"></script>
 
         
-            <script>
-                know = {
-                
-                "HI" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   Hello bot Vinit Here!",
-                "hi" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   Hello bot Vinit Here!",
-                "Hi" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   Hello bot Vinit Here!",
-                "help" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp how can i help you?",
-                "Help" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp how can i help you?",
-                "HELP" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp how can i help you?",
-                "contact" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp call us at 022-44148518",
-                "Contact" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp call us at 022-44148518",
-                "CONTACT" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp call us at 022-44148518",
-                "Slow" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  sorry for the inconvinence",
-                "slow" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  sorry for the inconvinence",
-                "SLOW" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  sorry for the inconvinence",
-                "NICE" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Thank you for visiting us",
-                "Nice" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Thank you for visiting us",
-                "nice" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Thank you for visiting us",
-                };
-                
-                function talk() {
-                var user = document.getElementById("userBox").value;
-                document.getElementById("userBox").value= "";
-                document.getElementById("chatLog").innerHTML += user+"<br>";
-                
-                if (user in know) {
-                document.getElementById("chatLog").innerHTML += know[user] + "<br>";
-                } else 
-                
-                {
-                document.getElementById("chatLog").innerHTML += "I don't understand... <br>";
-                }
-                }
-                
-              </script>
-               <section class="chatbot">
-                <h3>  CHATBOT   </h3>  
-              <body>
-                <section class="ask"> 
-                  <p id="chatLog"> <b>ask here</b></p> 
-                  <p>*****************</p>
-                  <input id="userBox" type="form" onkeydown="if(event.keyCode == 13) {talk()}">
-                 </section>
-                </body>
             
-            </div>
-
-    
+          
+    </div>
 
     <div class="credit"> created by <span>Group 17 </span> </diV>
 
