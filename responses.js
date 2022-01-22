@@ -10,7 +10,30 @@ function getBotResponse(input) {
         return "sorry for the inconvinence";
     } else if (input == "nice") {
         return "Thank you for visiting us";
-    }
+    } else if (input == "Help") {
+        return "how can i help you?";
+    } else if (input == "Contact") {
+        return "call us at 022-44148518";
+    } else if (input == "Slow") {
+        return "sorry for the inconvinence";
+    } else if (input == "Nice") {
+        return "Thank you for visiting us";
+    } else if (input == "Hi") {
+        return "Hello bot Vinit Here!";
+    } else if (input == "HELP") {
+        return "how can i help you?";
+    } else if (input == "CONTACT") {
+        return "call us at 022-44148518";
+    } else if (input == "SLOW") {
+        return "sorry for the inconvinence";
+    } else if (input == "NICE") {
+        return "Thank you for visiting us";
+    } else if (input == "HI") {
+        return "Hello bot Vinit Here!";    
+    }    
+    
+
+
 
 
    
