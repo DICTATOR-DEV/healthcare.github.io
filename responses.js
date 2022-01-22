@@ -1,14 +1,19 @@
 function getBotResponse(input) {
-    //rock paper scissors
-    if (input == "rock") {
-        return "paper";
-    } else if (input == "paper") {
-        return "scissors";
-    } else if (input == "scissors") {
-        return "rock";
+
+    if (input == "hi") {
+        return "Hello bot Vinit Here!";
+    } else if (input == "help") {
+        return "how can i help you?";
+    } else if (input == "contact") {
+        return "call us at 022-44148518";
+    } else if (input == "slow") {
+        return "sorry for the inconvinence";
+    } else if (input == "nice") {
+        return "Thank you for visiting us";
     }
 
-    // Simple responses
+
+   
     if (input == "hello") {
         return "Hello there!";
     } else if (input == "goodbye") {
@@ -16,4 +21,7 @@ function getBotResponse(input) {
     } else {
         return "Try asking something else!";
     }
+    
 }
+
+
