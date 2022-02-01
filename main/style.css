@@ -451,13 +451,7 @@ section:nth-child(odd) {
     padding: 1rem 0;
 }
 
-.review .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 2rem;
-}
-
-.review .box-container .box {
+.review .slide {
     border: var(--border);
     box-shadow: var(--box-shadow);
     border-radius: 15rem;
@@ -470,7 +464,7 @@ section:nth-child(odd) {
     z-index: 0;
 }
 
-.review .box-container .box img {
+.review .slide img {
     height: 10rem;
     width: 10rem;
     border-radius: 100%;
@@ -478,25 +472,25 @@ section:nth-child(odd) {
     border: 1rem solid rgb(0, 0, 0);
 }
 
-.review .box-container .box h3 {
+.review .slide h3 {
     color: rgb(19, 8, 8);
     font-size: 2.2rem;
     padding: .5rem 0;
 }
 
-.review .box-container .box .stars i {
+.review .slide .stars i {
     color: rgb(230, 255, 4);
     font-size: 1.5rem;
 }
 
-.review .box-container .box .text {
+.review .slide p {
     color: var(--light-color);
     line-height: 1.8;
     font-size: 1.6rem;
     padding-top: 4rem;
 }
 
-.review .box-container .box::before {
+.review .slide::before {
     content: '';
     position: absolute;
     top: -4rem;
