@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false">
 
 <head>
     <meta charset="UTF-8">
@@ -141,6 +141,24 @@
                 updateTime()
             }, 1000);
         </script>
+
+        <br>
+
+        <div class="alert1">
+
+            <head>
+                <script type="text/javascript" src="main/alert1.js">
+                </script>
+            </head>
+
+            <body>
+                <h1 class="heading"> Our Insurance Partners.. </h1>
+                <form>
+                    <input type="button" value="check here" onclick="msg()" />
+                </form>
+            </body>
+
+        </div>
 
     </section>
 
@@ -407,6 +425,46 @@
                           nerves and skin. ... The physicians who specialize in this area are called orthopedic surgeons or orthopedists.</p></b>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="heading"> Gallery </h1>
+
+
+        <div class="gallery">
+
+            <head>
+                <script type="text/javascript">
+                    Pictures = new Array("main/1.jpg", "main/2.jpg", "main/3.jpg", "main/4.jpg", "main/5.jpg", "main/6.jpg", "main/7.jpg", "main/8.jpg", "main/9.jpg");
+                    CurrentPicture = 0;
+
+                    function RunSlideShow(i) {
+                        if (document.images) {
+                            if (CurrentPicture > Pictures.length - 1)
+                                CurrentPicture = 0;
+                            if (CurrentPicture < 0)
+                                CurrentPicture = Pictures.length - 1;
+                            document.PictureDisplay.src = Pictures[CurrentPicture];
+                            CurrentPicture = CurrentPicture + i;
+                        }
+                    }
+                </script>
+            </head>
+
+            <body>
+                <p align="center"><img src="main/default.png" name="PictureDisplay" width="700" height="400" /></p>
+                <center>
+                    <table border="0">
+                        <tr>
+                            <div class="flex center">
+                                <input type="button" class="" value="<" onclick="RunSlideShow(1)">
+                                <input type="button" class="margin-right" value=">" onclick="RunSlideShow(-1)">
+                            </div>
+                        </tr>
+                    </table>
+                </center>
+            </body>
         </div>
     </section>
 

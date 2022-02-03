@@ -1,0 +1,39 @@
+function msg() {
+    var newLine = "\r\n"
+    var msg = "TOP PARTNER INSURANCE COMPANIES "
+    msg += newLine;
+    msg += "1) LIC Insurance Corporation Of India";
+    msg += newLine;
+    msg += "2) ICICI Prudential Life Insurance";
+    msg += newLine;
+    msg += "3) SBI Life Insurance";
+    msg += newLine;
+    msg += "4) HDFC Standard Life Insurance";
+    msg += newLine;
+    msg += "5) Max Life Insurance";
+    msg += newLine;
+    msg += "6) Bajaj Allianz Life Insurance";
+    msg += newLine;
+    msg += "7) Birla Sun Life Insurance";
+    msg += newLine;
+    msg += "8) Reliance Nippon Life Insurance";
+    msg += newLine;
+    msg += "9) TATA AIA Life Insurance";
+    msg += newLine;
+    msg += "10) PNB Metlife India Insurance";
+    msg += newLine;
+    msg += "11) Exide Life Insurance Company Limited";
+    msg += newLine;
+    msg += "12) Kotak Life Insurance Company Limited";
+    msg += newLine;
+    msg += "13) Aviva Life Insurance Company Limited";
+    msg += newLine;
+    msg += "14) Shriram Life Insurance Company Limited";
+    msg += newLine;
+    msg += "15) Bharti AXA Life Insurance Company Limited";
+    msg += newLine;
+    msg += "16) IDBI Federal Life Insurance Company Limited";
+    msg += newLine;
+    msg += "Note: Other Insurance policies will be accepted only when they comes under our Terms and Conditions. ";
+    alert(msg);
+}

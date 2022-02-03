@@ -173,6 +173,23 @@ section:nth-child(odd) {
     flex: 1 1 45rem;
 }
 
+.alert1 input {
+    background-color: #cc5959;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 25%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    color: #ffffff;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .container {
     max-width: 500px;
     display: grid;
@@ -449,6 +466,41 @@ section:nth-child(odd) {
     font-size: 1.5rem;
     line-height: 1.8;
     padding: 1rem 0;
+}
+
+.gallery img {
+    height: 40vw;
+    width: 60vw;
+    background-color: bisque;
+    border: 4px solid black;
+    border-radius: 10%;
+}
+
+.gallery input {
+    background-color: #e23f3f;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 25%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+}
+
+button.margin-right {
+    margin-right: 20px;
 }
 
 .review .slide {
