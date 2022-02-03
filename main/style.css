@@ -469,10 +469,10 @@ section:nth-child(odd) {
 }
 
 .gallery img {
-    height: 40vw;
-    width: 60vw;
+    height: 50vw;
+    width: 80vw;
     background-color: bisque;
-    border: 4px solid black;
+    border: 6px solid black;
     border-radius: 10%;
 }
 
@@ -480,7 +480,7 @@ section:nth-child(odd) {
     background-color: #e23f3f;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 25%;
-    padding: 10px;
+    padding: .5rem;
     margin: auto;
     display: flex;
     border-radius: 10px;
