@@ -15,15 +15,6 @@
     scroll-behavior: smooth;
 }
 
-.main .image {
-    padding: 9rem 10%;
-    position: relative;
-    background-image: linear-gradient(rgb(255, 255, 221), rgb(255, 255, 226));
-    border: 6px solid black;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
 .main .image img {
     width: 100%;
 }
@@ -33,6 +24,7 @@
     text-align: center;
     color: rgb(14, 12, 12);
     line-height: 1.8;
+    padding-top: 10%;
 }
 
 html {
@@ -46,12 +38,12 @@ section {
     padding: 2rem 9%;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
     background-image: linear-gradient(#739eee, lightblue);
 }
 
-section:nth-child(odd) {
-    background-image: linear-gradient(rgb(218, 107, 42), rgb(252, 252, 231));
+section:nth-child(even) {
+    background-image: linear-gradient(#ff69b4, lightblue);
 }
 
 .heading {
@@ -90,13 +82,9 @@ section:nth-child(odd) {
     color: var(--black);
 }
 
-.header .logo i {
-    color: var(--green);
-}
-
 .header .navbar a {
     font-size: 1.7rem;
-    color: var(--light-color);
+    color: black;
     margin-left: 2rem;
 }
 
@@ -151,7 +139,7 @@ section:nth-child(odd) {
     border-radius: 5px;
     border: 6px solid rgb(252, 0, 0);
     width: 100%;
-    background: rgb(12, 241, 184);
+    background: #739eee;
     max-width: 300px;
 }
 
@@ -469,11 +457,11 @@ section:nth-child(odd) {
 }
 
 .gallery img {
-    height: 50vw;
-    width: 80vw;
+    height: 40vw;
+    width: 70vw;
     background-color: bisque;
     border: 6px solid black;
-    border-radius: 10%;
+    border-radius: 20%;
 }
 
 .gallery input {

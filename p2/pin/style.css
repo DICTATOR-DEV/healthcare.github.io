@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background-image: linear-gradient(#739eee, lightblue);
+}
+
+section:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+    font-weight: bolder;
+    letter-spacing: .4rem;
+}
+
+.header {
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgb(255, 165, 0), rgb(255, 165, 0), rgb(255, 0, 0));
+    border: 1px solid black;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.header .logo i {
+    color: black;
+}
+
+.pincode .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.pincode .row .image {
+    flex: 1 1 45rem;
+}
+
+.pincode .row .image img {
+    width: 70%;
+    padding-top: 10%;
+}
+
+.pincode .row form {
+    max-width: 450px;
+    background: #6896ca;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #305A72;
+}
+
+p {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.pincode .row form h3 {
+    color: rgb(8, 32, 252);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+select {
+    width: 100%;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: red;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(46, 30, 9);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--light-color);
+    border-top: 1rem solid rgba(0, 0, 0, .1);
+}
