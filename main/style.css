@@ -73,7 +73,7 @@ section:nth-child(even) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(rgb(255, 165, 0), rgb(255, 165, 0), rgb(255, 0, 0));
+    background-color: #CFB53B;
     border: 1px solid black;
 }
 
