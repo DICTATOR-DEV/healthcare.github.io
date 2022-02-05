@@ -39,11 +39,11 @@ section {
 }
 
 section:nth-child(odd) {
-    background-image: linear-gradient(#739eee, lightblue);
+    background-image: linear-gradient(180deg, #739eee, lightblue);
 }
 
 section:nth-child(even) {
-    background-image: linear-gradient(#ff69b4, lightblue);
+    background-color: #ffe600;
 }
 
 .heading {
@@ -78,12 +78,12 @@ section:nth-child(even) {
 }
 
 .header .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--black);
 }
 
 .header .navbar a {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: black;
     margin-left: 2rem;
 }
@@ -137,10 +137,12 @@ section:nth-child(even) {
 .time-container {
     margin-bottom: 7px;
     border-radius: 5px;
-    border: 6px solid rgb(252, 0, 0);
-    width: 100%;
-    background: #739eee;
+    border: 6px solid rgb(0, 0, 0);
+    background: #0059ff;
     max-width: 300px;
+    color: #eee;
+    text-align: center;
+    text-shadow: 5px 0 0 black;
 }
 
 .hms {
@@ -162,7 +164,7 @@ section:nth-child(even) {
 }
 
 .alert1 input {
-    background-color: #cc5959;
+    background-color: #ea00ff;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 25%;
     padding: 10px;
@@ -267,8 +269,8 @@ section:nth-child(even) {
 
 .services .box-container .box p {
     color: var(--light-color);
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bolder;
     line-height: 2;
 }
 
@@ -295,6 +297,7 @@ section:nth-child(even) {
     color: var(--black);
     text-shadow: var(--text-shadow);
     font-size: 4rem;
+    font-weight: bold;
     line-height: 1.8;
 }
 
@@ -302,12 +305,13 @@ section:nth-child(even) {
     color: var(--light-color);
     padding: 1rem 0;
     font-size: 1.5rem;
+    font-weight: bolder;
     line-height: 1.8;
 }
 
 .doctors {
     max-width: 500px;
-    border: 4px solid black;
+    border: 6px solid black;
     border-radius: 10%;
     margin: 80px auto;
     position: relative;
@@ -402,16 +406,16 @@ section:nth-child(even) {
     border: var(--border);
     box-shadow: var(--box-shadow);
     background-image: linear-gradient(blue, ivory);
-    border-radius: 15rem;
+    border-radius: 10rem;
     padding: 5rem;
-    border: 3px solid black;
+    border: 6px solid black;
 }
 
 .departments .box-container .box .image {
     height: 20rem;
     overflow: hidden;
     border-radius: 15rem;
-    border: 2px solid black;
+    border: 6px solid black;
 }
 
 .departments .box-container .box .image img {
@@ -461,17 +465,15 @@ section:nth-child(even) {
     width: 70vw;
     background-color: bisque;
     border: 6px solid black;
-    border-radius: 20%;
 }
 
 .gallery input {
-    background-color: #e23f3f;
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 25%;
+    background-color: #050505;
+    border: 3px solid rgb(231, 0, 0);
+    border-radius: 10%;
     padding: .5rem;
     margin: auto;
     display: flex;
-    border-radius: 10px;
     align-items: center;
     justify-content: space-between;
     color: #ffffff;
@@ -492,11 +494,9 @@ button.margin-right {
 }
 
 .review .slide {
-    border: var(--border);
-    box-shadow: var(--box-shadow);
-    border-radius: 15rem;
+    border-radius: 10rem;
     padding: 2.5rem;
-    border: 3px solid black;
+    border: 6px solid black;
     background-image: linear-gradient(90deg, green, ivory);
     text-align: center;
     position: relative;
@@ -515,33 +515,21 @@ button.margin-right {
 .review .slide h3 {
     color: rgb(19, 8, 8);
     font-size: 2.2rem;
+    font-weight: bolder;
     padding: .5rem 0;
 }
 
 .review .slide .stars i {
     color: rgb(230, 255, 4);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .review .slide p {
     color: var(--light-color);
     line-height: 1.8;
     font-size: 1.6rem;
+    font-weight: bold;
     padding-top: 4rem;
-}
-
-.review .slide::before {
-    content: '';
-    position: absolute;
-    top: -4rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--green);
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    height: 25rem;
-    width: 120%;
-    z-index: -1;
 }
 
 .footer .box-container {
@@ -632,13 +620,12 @@ a:hover {
         top: 115%;
         right: 2rem;
         border-radius: .5rem;
-        box-shadow: var(--box-shadow);
         width: 30rem;
-        border: var(--border);
         background: rgb(0, 0, 0);
         transform: scale(0);
         opacity: 0;
         transform-origin: top right;
+        font-weight: bolder;
         transition: none;
     }
     .header .navbar.active {
@@ -648,6 +635,7 @@ a:hover {
     }
     .header .navbar a {
         font-size: 2rem;
+        font-weight: bolder;
         display: block;
         margin: 2.5rem;
         color: #fff;
