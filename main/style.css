@@ -309,6 +309,11 @@ section:nth-child(even) {
     line-height: 1.8;
 }
 
+audio {
+    align-items: center;
+    max-width: 10em;
+}
+
 .doctors {
     max-width: 500px;
     border: 6px solid black;
