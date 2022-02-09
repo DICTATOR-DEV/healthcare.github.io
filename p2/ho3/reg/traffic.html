@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charshet="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> percentage bar</title>
+    <style type="text/css">
+        html {
+            font-size: 25px;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            background: radical-gradient(circle, cornflowerblue, mediumslateblue);
+            display: grid;
+            text-align: center;
+            color: aliceblue;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            margin: auto;
+        }
+        
+        .outer {
+            margin: auto;
+            height: 3rem;
+            background: #000040;
+            border-radius: 2rem;
+            padding: 0 0.75rem;
+            display: grid;
+            box-sizing: border-box;
+        }
+        
+        .inner {
+            width: 0;
+            height: 50%;
+            background: mediumseagreen;
+            margin: auto 0;
+            border-radius: 1rem;
+        }
+        
+        .percent {
+            font-size: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="outer">
+            divclass="inner">
+        </div>
+    </div>
+    <div class="percent">
+        50%</div>
+    <div>of ghdsuyds</div>
+    </div>
+
+    <script type="text/javascript">
+        var x = 1,
+            y = "%";
+        setInterval(() => {
+            z = x + y;
+            document.queryselector('inner').style.width = z;
+            document.queryselector('percent').innerText = z;
+            x++;
+            if (x > 100) {
+                x = 1;
+            }
+        }, 150)
+    </script>
+
+
+</body>
+
+</html>

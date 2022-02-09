@@ -2,7 +2,7 @@
 var coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
+    coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
 
         var content = this.nextElementSibling;
@@ -35,7 +35,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "How's it going?"
+    let firstMessage = "Hello dear"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -60,7 +60,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "Please say something!";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -98,7 +98,7 @@ function heartButton() {
 }
 
 // Press enter to send a message
-$("#textInput").keypress(function (e) {
+$("#textInput").keypress(function(e) {
     if (e.which == 13) {
         getResponse();
     }

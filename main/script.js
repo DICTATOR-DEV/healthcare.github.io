@@ -53,3 +53,16 @@ document.addEventListener('play', function(e) {
         }
     }
 }, true);
+
+var x = 1,
+    y = "%";
+setInterval(() => {
+    z = x + y;
+
+    document.querySelector('.inner').style.width = z;
+    document.querySelector('.percent').innerText = z;
+    x++;
+    if (x > 97) {
+        x = 80
+    }
+}, 250)
