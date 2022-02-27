@@ -12,6 +12,7 @@
     height: 70px;
     border-radius: 50%;
     text-align: center;
+    float: right;
     outline: none;
     font-size: 18px;
     border: 3px solid black;
@@ -27,7 +28,6 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #d40d0d;
 }
 
 .full-chat-block {
@@ -38,6 +38,8 @@
     scrollbar-width: 100px;
     height: max-content;
     transition: max-height 0.2s ease-out;
+    border-radius: 5%;
+    border: 2px solid black;
 }
 
 .outer-container {
@@ -70,7 +72,7 @@
     background-color: rgb(105, 8, 185);
     border-radius: 20px 20px 20px 20px;
     border: 3px solid rgb(255, 255, 255);
-    padding: 10px 0px 10px 10px;
+    padding: 5px 5px 5px 5px;
 }
 
 .chat-bar-icons {
@@ -161,7 +163,7 @@
 @media screen and (max-width:600px) {
     .full-chat-block {
         width: 100%;
-        border-radius: 0px;
+        border-radius: 5%;
         border: 2px solid black;
     }
     .chat-bar-collapsible {

@@ -71,98 +71,103 @@
 
     </section>
 
+
     <section>
-        <div class="time-container">
-            <span class="hms"></span>
-            <span class="ampm"></span>
+        <div class="center">
+            <div class="time-container">
+                <span class="hms"></span>
+                <span class="ampm"></span>
+                <br>
+                <span class="date"></span>
+            </div>
+
+            <script>
+                function updateTime() {
+                    var dateInfo = new Date();
+
+                    /* time */
+                    var hr,
+                        _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
+                        sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
+                        ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM";
+
+                    // replace 0 with 12 at midnight, subtract 12 from hour if 13–23
+                    if (dateInfo.getHours() == 0) {
+                        hr = 12;
+                    } else if (dateInfo.getHours() > 12) {
+                        hr = dateInfo.getHours() - 12;
+                    } else {
+                        hr = dateInfo.getHours();
+                    }
+
+                    var currentTime = hr + ":" + _min + ":" + sec;
+
+                    // print time
+                    document.getElementsByClassName("hms")[0].innerHTML = currentTime;
+                    document.getElementsByClassName("ampm")[0].innerHTML = ampm;
+
+                    /* date */
+                    var dow = [
+                            "Sunday",
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        month = [
+                            "January",
+                            "February",
+                            "March",
+                            "April",
+                            "May",
+                            "June",
+                            "July",
+                            "August",
+                            "September",
+                            "October",
+                            "November",
+                            "December"
+                        ],
+                        day = dateInfo.getDate();
+
+                    // store date
+                    var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + " " + day;
+
+                    document.getElementsByClassName("date")[0].innerHTML = currentDate;
+                };
+
+                // print time and date once, then update them every second
+                updateTime();
+                setInterval(function() {
+                    updateTime()
+                }, 1000);
+            </script>
+
+
             <br>
-            <span class="date"></span>
-        </div>
 
-        <script>
-            function updateTime() {
-                var dateInfo = new Date();
+            <div class="alert1">
 
-                /* time */
-                var hr,
-                    _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
-                    sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
-                    ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM";
+                <head>
+                    <script type="text/javascript" src="main/alert1.js">
+                    </script>
+                </head>
 
-                // replace 0 with 12 at midnight, subtract 12 from hour if 13–23
-                if (dateInfo.getHours() == 0) {
-                    hr = 12;
-                } else if (dateInfo.getHours() > 12) {
-                    hr = dateInfo.getHours() - 12;
-                } else {
-                    hr = dateInfo.getHours();
-                }
-
-                var currentTime = hr + ":" + _min + ":" + sec;
-
-                // print time
-                document.getElementsByClassName("hms")[0].innerHTML = currentTime;
-                document.getElementsByClassName("ampm")[0].innerHTML = ampm;
-
-                /* date */
-                var dow = [
-                        "Sunday",
-                        "Monday",
-                        "Tuesday",
-                        "Wednesday",
-                        "Thursday",
-                        "Friday",
-                        "Saturday"
-                    ],
-                    month = [
-                        "January",
-                        "February",
-                        "March",
-                        "April",
-                        "May",
-                        "June",
-                        "July",
-                        "August",
-                        "September",
-                        "October",
-                        "November",
-                        "December"
-                    ],
-                    day = dateInfo.getDate();
-
-                // store date
-                var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + " " + day;
-
-                document.getElementsByClassName("date")[0].innerHTML = currentDate;
-            };
-
-            // print time and date once, then update them every second
-            updateTime();
-            setInterval(function() {
-                updateTime()
-            }, 1000);
-        </script>
-
-        <br>
-
-        <div class="alert1">
-
-            <head>
-                <script type="text/javascript" src="main/alert1.js">
-                </script>
-            </head>
-
-            <body>
-                <audio controls>
+                <body>
+                    <audio controls>
                     <source src="main/insurance.mp3" type="audio/mpeg">
                   </audio>
-                <h1 class="heading"> Our Insurance Partners.. </h1>
-                <form>
-                    <input type="button" value="check here" onclick="msg()" />
-                </form>
-            </body>
+                    <h1 class="heading"> Our Insurance Partners.. </h1>
+                    <form>
+                        <input type="button" value="check here" onclick="msg()" />
+                    </form>
+                </body>
+            </div>
         </div>
     </section>
+
 
     <section class="bodys">
         <bodys>
@@ -298,12 +303,15 @@
     </section>
 
 
-
     <section>
-        <div class="container">
-            <div class="main-video-container">
-                <h3 class="main-vid-title">Introduction</h3>
-                <video src="main/intro.mp4" loop controls class="main-video"></video>
+        <div class="center">
+            <div class="container">
+                <h1 class="heading"> INTRODUCTION </h1>
+
+                <div class="main-video-container">
+
+                    <video src="main/intro.mp4" loop controls class="main-video"></video>
+                </div>
             </div>
     </section>
 
