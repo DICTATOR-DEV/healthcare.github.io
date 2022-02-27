@@ -1,19 +1,17 @@
 .chat-bar-collapsible {
     position: fixed;
     bottom: 0;
-    right: 50px;
+    right: 10px;
 }
 
 .collapsible {
     background-color: aqua;
-    cursor: pointer;
     padding: 5px;
+    right: 10px;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     text-align: center;
-    float: right;
-    outline: none;
     font-size: 18px;
     border: 3px solid black;
 }
@@ -64,7 +62,7 @@
 
 .chat-bar-input-block {
     display: flex;
-    float: left;
+    float: right;
     box-sizing: border-box;
     justify-content: space-between;
     width: 100%;
@@ -96,7 +94,7 @@
 }
 
 .input-box {
-    float: left;
+    float: right;
     border: none;
     box-sizing: border-box;
     width: 100%;
@@ -169,7 +167,7 @@
     .chat-bar-collapsible {
         position: fixed;
         bottom: 0;
-        right: 50px;
+        right: 10px;
         width: 70%;
         text-align: right;
         box-shadow: 0 8px 16px 0 rgba(20, 19, 19, 0.2);
