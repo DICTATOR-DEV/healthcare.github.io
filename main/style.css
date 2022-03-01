@@ -71,7 +71,7 @@
     }
     
     .header {
-        padding: 2rem 9%;
+        padding: 0.5rem 9%;
         position: fixed;
         top: 0;
         left: 0;
@@ -81,8 +81,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-image: linear-gradient(rgb(255, 165, 0), rgb(255, 165, 0), rgb(255, 0, 0));
-        border: 1px solid black;
+        background-color: wheat;
+        border: 10px solid rgba(0, 0, 255, 0.466);
+        outline: 2px solid;
     }
     
     .header .logo {
@@ -103,7 +104,8 @@
     #menu-btn {
         font-size: 2.5rem;
         border-radius: .5rem;
-        background: #eee;
+        background: rgb(0, 255, 255);
+        border: 1px solid;
         padding: 1rem 1.5rem;
         cursor: pointer;
         display: none;
@@ -677,7 +679,7 @@
             font-size: 55%;
         }
         .header {
-            padding: 2rem;
+            padding: 0.7rem;
         }
         section {
             padding: 2rem;
@@ -707,11 +709,11 @@
             transition: .2s ease-out;
         }
         .header .navbar a {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: bolder;
             display: block;
             margin: 2.5rem;
-            color: #fff;
+            color: rgb(165, 70, 243);
         }
     }
     
