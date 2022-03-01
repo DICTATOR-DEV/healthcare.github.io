@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" oncontextmenu="return false">
+<html lang="en">
 
 </html>
 
@@ -164,6 +164,23 @@
                         <input type="button" value="check here" onclick="msg()" />
                     </form>
                 </body>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="heading">Call us at 108 </h1>
+        <div class="baxa">
+            <div class="mainbg">
+                <div class="road">
+
+                </div>
+                <div class="building">
+
+                </div>
+                <div class="car">
+                    <img src="main/ambulance.png" alt="Tank">
+                </div>
             </div>
         </div>
     </section>
@@ -503,6 +520,7 @@
                     Pictures = new Array("main/1.jpg", "main/2.jpg", "main/3.jpg", "main/4.jpg", "main/5.jpg", "main/6.jpg", "main/7.jpg", "main/8.jpg", "main/9.jpg");
                     CurrentPicture = 0;
 
+
                     function RunSlideShow(i) {
                         if (document.images) {
                             if (CurrentPicture > Pictures.length - 1)
@@ -511,6 +529,7 @@
                                 CurrentPicture = Pictures.length - 1;
                             document.PictureDisplay.src = Pictures[CurrentPicture];
                             CurrentPicture = CurrentPicture + i;
+
                         }
                     }
                 </script>
