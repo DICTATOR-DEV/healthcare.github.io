@@ -35,11 +35,25 @@
                     <a href="p2/index.html">pincode</a>
                 </b></p>
         </nav>
-        <button id="login" class="user" onclick="location.href='ema/index.php';"><i class="fas fa-user-circle"></i></button>
+        <div id="login" class="fas fa-user-circle"></div>
 
         <div id="menu-btn" class="fas fa-bars"></div>
 
     </header>
+
+    <div class="login-form">
+
+        <form action="connect.php" method="POST">
+            <h3>Input Your Details for Medical Updates</h3>
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="text" placeholder="contact" class="box">
+            <p>* THIS INFORMATION WILL BE USED FOR MEDICAL EVENT OFFERS UPDATES </p>
+            <input type="submit" class="btn" value="SEND">
+            <i class="fas fa-times"></i>
+        </form>
+    
+    </div>
 
     <section>
 
