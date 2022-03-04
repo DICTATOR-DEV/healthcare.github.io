@@ -9,7 +9,7 @@
 
     $email_body = "User Name: $name.\n".
                    "User Email: $visitor_email.\n".
-                      "User Message: $message.\n";
+                      "User Contact: $contact.\n";
 
 
     $to = "adityaacharya1000@gmail.com";
